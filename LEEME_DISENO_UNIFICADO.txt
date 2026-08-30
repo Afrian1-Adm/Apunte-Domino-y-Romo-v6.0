@@ -1,0 +1,49 @@
+CLUB DOMINÓ Y ROMO — DISEÑO UNIFICADO
+=======================================
+
+OBJETIVO
+--------
+Copiar la identidad visual final de torneos.html al resto de la app sin
+modificar la lógica de Supabase, IDs, eventos ni funciones JavaScript.
+
+ARCHIVO NUEVO
+-------------
+app-theme.css
+
+Es la capa visual compartida. Contiene:
+- paleta clara y oscura;
+- tarjetas;
+- botones;
+- formularios;
+- tablas;
+- estados;
+- responsive móvil/escritorio;
+- estilos específicos para Lobby, Mesa, Perfil, Admin, Consultas,
+  Galardones, Historial, Login y Apunte.
+
+HTML ACTUALIZADOS
+-----------------
+index.html
+lobby.html
+login.html
+mesa.html
+perfil.html
+admin.html
+apunte.html
+consultas.html
+galardones.html
+historial.html
+
+torneos.html se conserva como referencia visual y funcional.
+
+SERVICE WORKER
+--------------
+Se conserva su lógica. Solamente se agregó ./app-theme.css a CORE_ASSETS
+para que la nueva capa visual también esté disponible en caché/offline.
+
+INSTALACIÓN
+-----------
+Sube TODOS los archivos de esta carpeta respetando los nombres.
+El nuevo app-theme.css debe quedar al mismo nivel que los HTML.
+
+No hay SQL nuevo.
